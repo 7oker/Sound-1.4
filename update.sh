@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 echo "欢迎使用树叶云端雷达一键搭建"
-echo "即将搭建的是1.3版本"
+echo "即将搭建的是1.4版本"
 echo "准备开始安装"
 read -p "回车后开始安装"
 echo "请输入你的内网ip" 
@@ -28,8 +28,8 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/794959818/PUBG-Radar-Onekey.git
-cd PUBG-Radar-Onekey/
+git clone https://github.com/shuye71/Sound-1.4.git
+cd Sound-1.4/
 npm i
 npm i -g pino
 npm install -g forever
