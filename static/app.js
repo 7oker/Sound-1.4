@@ -676,18 +676,7 @@ const renderMap = () => {
          [loc[0] + Math.cos(radianAngle) * 512, loc[1] - Math.sin(radianAngle) * 512]]
         )
       )
-    } else { // enemy
-      if (playerObj.team) {
-        label = `队${playerObj.team}`
-      } else if (playerObj.name) {
-        label = playerObj.name
-      } else {
-        label = `<${playerObj.guid}>`
-      }
-      if (playerObj.kills) {
-        label += `杀${playerObj.kills}`
-      }
-    }
+    } 
     if (playerObj.health != null) {
       label += `血${Math.floor(playerObj.health)}`
     }
